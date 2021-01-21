@@ -1,0 +1,26 @@
+.top-player{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.player img{
+    width: 50%;
+    margin-right: 30px;
+    
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 320px){
+    .top-player{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
+@media (min-width: 600px){
+    .top-player{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
